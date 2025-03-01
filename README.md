@@ -1,3 +1,5 @@
+# I'll use a botched way of launching the game for now that will only work on my machine, maybe one day I'll make it just launch the process and add a launch args box in the settings idfk...
+---
 # BeatSaberModManager
 
 ### About
