@@ -24,17 +24,7 @@ namespace BeatSaberModManager.Services.Implementations.BeatSaber
         /// <inheritdoc />
         public void LaunchGame(string installDir)
         {
-            switch (_installDirLocator.DetectPlatform(installDir))
-            {
-                case PlatformType.Steam:
-                    PlatformUtils.TryOpenUri(new Uri("steam://rungameid/620980"));
-                    break;
-                case PlatformType.Oculus:
-                    PlatformUtils.TryStartProcess(new ProcessStartInfo("Beat Saber.exe") { WorkingDirectory = installDir }, out _);
-                    break;
-                default:
-                    throw new InvalidOperationException("Could not detect platform.");
-            }
+            PlatformUtils.TryOpenUri(new Uri("steam://rungameid/15057514534983958528"));
         }
     }
 }
